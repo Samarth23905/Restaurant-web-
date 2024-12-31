@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="googlepay.css">
+</head>
+<body>
+    <div class="container">
+        <h1>QR Code and @google pay Submission</h1>
+        <div class="qr-code-container">
+          <img src="qr2.jpg" alt="QR Code" class="qr-code">
+        </div>
+        <form action="#" method="POST">
+          <label for="gpay-handle">@google pay Handle:</label>
+          <input type="text" id="gpay-handle" name="gpay-handle" placeholder="Enter your @gpay handle" required>
+          <button onclick="nxtPage(event)" type="submit">Submit</button>
+        </form>
+      </div>
+      <script>
+        function nxtPage(event) {
+          event.preventDefault();
+        }
+      </script>            
+</body>
+</html>

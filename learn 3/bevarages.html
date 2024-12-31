@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - My E-commerce Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <button id="contBtn" style="position: relative; right: 30rem; top: 3rem; width: 8rem;">ContactUs</button>
+        <h1>Online Shop</h1>
+        <h3><a href="#cart" style="color: #000; text-decoration: none;">View Cart</a></h4>
+    </header>
+
+    <main>
+        <section class="products">
+            <div class="product">
+                <img src="food7.jpg" alt="Product 1 Image">
+                <h2>Mojito</h2>
+                <p class="price">₹99</p>
+                <button onclick="addToCart('Plaid Jacket',99)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="food9.jpg" alt="Product 3 Image">
+                <h2>Spicy mojito</h2>
+                <p class="price">₹150</p>
+                <button onclick="addToCart('Spicy mojito', 150)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="food10.jpg" alt="Product 4 Image">
+                <h2>Raspberry mojito</h2>
+                <p class="price">₹199</p>
+                <button onclick="addToCart('Raspberry mojito', 199)">Add to Cart</button>
+            </div><div class="product">
+                <img src="food11.jpg" alt="Product 5 Image">
+                <h2>Martini</h2>
+                <p class="price">₹49</p>
+                <button onclick="addToCart('Martini', 49)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="food12.jpg" alt="Product 6 Image">
+                <h2>Raspberry mojito</h2>
+                <p class="price">₹99</p>
+                <button onclick="addToCart('', 99)">Add to Cart</button>
+            </div>
+        </section>
+        <section id="cart">
+            <h2>Cart</h2>
+            <ul id="cartItems" style="color: #000;"></ul>
+            <p id="totalPrice" style="color: #000;">Total: ₹0</p>
+            <button onclick="buy()" class="btn" id="buyNowBtn">Buy Now</button>
+          </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My E-commerce Site</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

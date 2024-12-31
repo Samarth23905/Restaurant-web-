@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code and Payment Option</title>
+  <link rel="stylesheet" href="cod.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Payment option COD</h1>
+    <form action="#" method="POST">
+      <label for="payment-option">Payment Option:</label>
+      <select id="payment-option" name="payment-option" required>
+        <option value="cash-on-delivery">Cash on Delivery</option>
+      </select>
+      <button onclick="nxtPage(event)" type="submit">Submit</button>
+    </form>
+  </div>
+  <script>
+    function nxtPage(event) {
+      event.preventDefault();
+    }
+  </script>        
+</body>
+</html>
